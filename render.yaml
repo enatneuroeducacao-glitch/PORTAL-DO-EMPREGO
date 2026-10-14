@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: portal-do-emprego
+    runtime: docker
+    plan: starter
+    healthCheckPath: /
+    autoDeploy: false
+    envVars:
+      - key: NODE_ENV
+        value: production
